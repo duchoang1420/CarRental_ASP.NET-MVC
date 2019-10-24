@@ -1,0 +1,36 @@
+﻿@model IEnumerable<CarRental_System.Models.CAR>
+
+@{
+    ViewBag.Title = "SPCateCar";
+    Layout = "~/Views/Shared/_LayoutCarRental.cshtml";
+}
+
+<h6 style="text-align:center;font:arial; color:red">Choose Model</h6>
+<div class="row">
+    @foreach (var CAR in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "CarRental", new { id = CAR.CarID})">
+                    <img alt="@CAR.CarName" src="~/images/@CAR.Picture" width="200" />
+                </a>
+                <div>
+                    <br />
+                    <h4 style="text-align:center">
+                        @CAR.CarName
+                    </h4>
+                    <p></p>
+                </div>
+                <div class="ratings">
+                    <p class="pull-right">15 reviews</p>
+                    <p>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    }

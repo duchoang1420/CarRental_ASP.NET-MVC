@@ -1,0 +1,13 @@
+﻿@model IEnumerable<CarRental_System.Models.BRANCH>
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("SPBRANCH","CarRental",new { id = item.BranchID })" class="list-group-item">
+            @item.BranchName
+        </a>
+
+    }
+</div>
+
+
+

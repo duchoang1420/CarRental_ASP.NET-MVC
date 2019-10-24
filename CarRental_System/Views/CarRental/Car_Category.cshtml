@@ -1,0 +1,12 @@
+﻿@model IEnumerable<CarRental_System.Models.Car_Category>
+<div class="list-group">
+    @foreach (var item in Model)
+    {
+        <a href="@Url.Action("SPCateCar","CarRental",new { id = item.CateID })" class="list-group-item">
+            @item.Catename
+        </a>
+
+    }
+</div>
+
+

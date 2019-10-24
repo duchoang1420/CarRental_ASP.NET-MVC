@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_LayoutCarRental.cshtml";
+}
+
+<h4 style="color:red; text-align:center">@ViewBag.Nofitication</h4>
+<table align="center">
+    <h3 style="text-align:center">Login</h3>
+    @using (Html.BeginForm())
+    {
+        <tr style="height:40px">
+            <td> ID:</td>
+            <td>
+                @Html.TextBox("ID")
+                @ViewData["error7"]
+            </td>
+        </tr>
+        <tr style="height:40px">
+            <td> Password:</td>
+            <td>
+                @Html.Password("Passwords")
+                @ViewData["error8"]
+            </td>
+        </tr>
+        <tr style="height:40px">
+            <td> </td>
+            <td>
+                <input type="submit" value="Sign Up" />
+            </td>
+        </tr>
+        <tr style="height:40px">
+            <td> </td>
+            <td>
+                <a>@Html.ActionLink("Don't have account!!! Register here", "Register", "User")</a>
+            </td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,32 @@
+﻿@model IEnumerable<CarRental_System.Models.CAR>
+@{
+    ViewBag.Title = "SPBRANCH";
+    Layout = "~/Views/Shared/_LayoutCarRental.cshtml";
+}
+
+    <h6 style="text-align:center;font:arial; color:red">Branch Locations</h6>
+<div class="row">
+    @foreach (var CAR in Model)  
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "CarRental", new { id = CAR.CarID})">
+                    <img alt="@CAR.CarName" src="~/images/@CAR.Picture" width="200" />
+                </a>
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href="@Url.Action("Details", "CarRental", new { id = CAR.CarID})"> @CAR.CarName</a>
+                    </h4>
+                    <h5>@CAR.CostPerDay</h5>
+                </div>
+                <div class="card-footer">
+                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                </div>
+            </div>
+        </div>
+    }
+
+
+</div>
+
+

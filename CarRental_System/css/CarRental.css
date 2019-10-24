@@ -1,0 +1,195 @@
+
+/**
+* ------------------------------------------------------------------
+*[Master Stylesheet]
+*
+* Project: Cardoor - Car Rental HTML Template
+* Version: 
+* Created : 13.02.2018
+* Author Name: alen dui
+* Author URI: http://alendkidjt.com
+* Description: Cardoor it is a modern and clean designed Car Rental 100% Responsive HTML Template.*/
+
+
+body {
+    padding-top: 56px;
+}
+/*== Footer Area CSS Start ==*/
+
+#footer-area a {
+    color: #ffd000;
+}
+
+.footer-widget-area {
+    background-color: #1e2228;
+    padding: 60px 0;
+}
+
+    .footer-widget-area h2,
+    .footer-widget-area {
+        color: #fff;
+    }
+
+.singlefooter-widget h2 {
+    border-bottom: 1px dashed #ffd000;
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.single-footer-widget h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.single-footer-widget p {
+    font-size: 13px;
+    line-height: 2;
+}
+
+.single-footer-widget img {
+    margin-bottom: 20px;
+}
+
+.newsletter-area {
+    margin-top: 20px;
+}
+
+    .newsletter-area form {
+        position: relative;
+    }
+
+    .newsletter-area input {
+        background-color: transparent;
+        border: 1px solid #ffd000;
+        border-radius: 2px;
+        color: #fff;
+        height: 55px;
+        padding: 10px;
+        padding-right: 70px;
+        width: 100%;
+    }
+
+    .newsletter-area .newsletter-btn {
+        background-color: #ffd000;
+        border: 0 none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 17px;
+        height: 100%;
+        position: absolute;
+        right: 1px;
+        top: 0;
+        width: 50px;
+    }
+
+.recent-post li {
+    background-color: #000;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1.3px;
+    margin-bottom: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+    .recent-post li:last-child {
+        margin-bottom: 0;
+    }
+
+    .recent-post li i {
+        background-color: #fff;
+        color: #000;
+        float: right;
+        font-size: 18px;
+        height: 35px;
+        line-height: 35px;
+        padding-left: 2px;
+        position: absolute;
+        right: 20px;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        width: 35px;
+    }
+
+    .recent-post li:hover i {
+        background-color: #ffd000;
+    }
+
+.recent-post li {
+    background-color: #000;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+}
+
+    .recent-post li:last-child {
+        margin-bottom: 0;
+    }
+
+    .recent-post li i {
+        background-color: #fff;
+        color: #000;
+        float: right;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 2px;
+        position: absolute;
+        right: 15px;
+        text-align: center;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        width: 30px;
+    }
+
+    .recent-post li:hover i {
+        background-color: #ffd000;
+    }
+
+
+.get-touch {
+    color: #ffd000;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 2.5;
+    margin-top: 20px;
+}
+
+    .get-touch i.fa {
+        margin-right: 5px;
+    }
+
+.map-show {
+    background-color: #ffd000;
+    color: #000 !important;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 10px 25px;
+    text-transform: uppercase;
+}
+
+.footer-bottom-area {
+    background-color: #000;
+    color: #eaeaea;
+    padding: 15px 0;
+}
+
+/*/*== Footer Area CSS End ==*/

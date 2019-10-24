@@ -1,0 +1,51 @@
+﻿<style type="text/css">
+    #order a {
+        clear: both;
+        background-color: red;
+        color: white;
+        width: 120px;
+        height: 35px;
+        display: block;
+        float: right;
+        text-align: center;
+        padding-top: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+        #order a:hover {
+            background-color: gray;
+            color: red;
+        }
+</style>
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutCarRental.cshtml";
+}
+
+<h3 style="text-align:center;font:arial; color:red">Infomation</h3>
+<div>
+    <div style="width:40%;float:left;border-left:dotted 1px;border-color: azure">
+        <img alt="@Model.CarID" src="~/images/@Model.Picture" />
+    </div>
+    <div style="width:60%;float:left;padding:10px">
+        <h4 style="color:red">
+            <span style="font-weight:bold">@Model.CarName</span>
+        </h4>
+        <h5>
+            <span style="font-weight:bold">Introduce:</span> @Model.Detail
+        </h5>
+        <h5>
+            <span style="font-weight:bold">Status:</span> @Model.StatusCar
+        </h5>
+        <h5 style="font-weight:bold">Cost: <span style="color:red;font-size:16pt">@Model.CostPerDay $ per day</span></h5>
+
+    </div>
+    <div id="order">
+        <a href="@Url.Action("AddMoreCart","Cart",new { @iCarID= @Model.CarID, @strURL=Request.Url.ToString() })" class="list-group-item">Book</a>
+    </div>
+    
+
+</div>
+
+
